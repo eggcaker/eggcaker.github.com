@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 2016-01-23 Sat 20:53 -->
+<meta  charset="utf-8">
+<meta  name="viewport" content="width=device-width, initial-scale=1">
+<title>Awesome Configuration</title>
+<meta  name="generator" content="Org-mode">
+<meta  name="author" content="Andrew Phillips">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/yep8.css"/>
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+</head>
+<body>
+<div id="preamble" class="status">
+<p class="preamble"><a href="/">[HOME]</a></p>
+</div>
+<div id="content">
+<h1 class="title">Awesome Configuration</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgheadline1">Crappy</a>
+<ul>
+<li><a href="#orgheadline2">Installation from Git</a></li>
+<li><a href="#orgheadline3">Installation from APT on Ubuntu</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline4">Configuration</a>
+<ul>
+<li><a href="#orgheadline5">Awesome Config GUI</a></li>
+<li><a href="#orgheadline6">Manual Configuration</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline7">Plugin API</a></li>
+<li><a href="#orgheadline8">Code Used</a></li>
+</ul>
+</div>
+</div>
+<p>
+This repository includes the following:
+</p>
+<ul class="org-ul">
+<li>awesome-config - A GUI for manipulating the</li>
+<li>crappy - A library for reading configuration files for Awesome</li>
+</ul>
+
+<div id="outline-container-orgheadline1" class="outline-2">
+<h2 id="orgheadline1">Crappy</h2>
+<div class="outline-text-2" id="text-orgheadline1">
+<p>
+Crappy reads a configuration file to configure Awesome 3.4.x or 3.5.x.  Specifically tested on 3.4.11 and 3.5.5+.  The goal of this is to be able to move between multiple versions of Awesome and maintain the same basic configuration in a relatively easy to edit file.
+</p>
+</div>
+<div id="outline-container-orgheadline2" class="outline-3">
+<h3 id="orgheadline2">Installation from Git</h3>
+<div class="outline-text-3" id="text-orgheadline2">
+<p>
+Clone the repository anywhere you want:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">git clone https://github.com/theasp/awesome-config.git
+</pre>
+</div>
+
+<p>
+Backup your configuration directory:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">cp -a ~/.config/awesome ~/.config/awesome.bak-$<span style="color: #2aa198;">(</span>date +%F-%T<span style="color: #2aa198;">)</span>
+</pre>
+</div>
+
+<p>
+Make a symlink from your awesome config directory to the libraries:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">ln -s $<span style="color: #2aa198;">(</span><span style="color: #657b83; font-weight: bold;">pwd</span><span style="color: #2aa198;">)</span>/awesome-config/lib/* ~/.config/awesome/
+</pre>
+</div>
+
+<p>
+Copy the example <code>rc.lua</code> and <code>crappy-config.lua</code> to your config directory:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">cp awesome-config/examples/<span style="color: #2aa198;">{</span>crappy-config.lua,rc.lua<span style="color: #2aa198;">}</span> ~/.config/awesome/
+</pre>
+</div>
+
+<p>
+Start awesome.
+</p>
+</div>
+</div>
+<div id="outline-container-orgheadline3" class="outline-3">
+<h3 id="orgheadline3">Installation from APT on Ubuntu</h3>
+<div class="outline-text-3" id="text-orgheadline3">
+<p>
+For the released version:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">sudo add-apt-repository ppa:theasp/awesome-config
+</pre>
+</div>
+
+<p>
+For the latest snapshot version:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">sudo add-apt-repository ppa:theasp/awesome-config-snapshot
+</pre>
+</div>
+
+<p>
+Then run:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">sudo apt-get update
+sudo apt-get install awesome-config
+</pre>
+</div>
+
+<p>
+Backup your configuration directory:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">cp -a ~/.config/awesome ~/.config/awesome.bak-$<span style="color: #2aa198;">(</span>date +%F-%T<span style="color: #2aa198;">)</span>
+</pre>
+</div>
+
+<p>
+Copy the example <code>rc.lua</code> and <code>crappy-config.lua</code> to your config directory:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">cp /usr/share/doc/awesome-config/examples/<span style="color: #2aa198;">{</span>crappy-config.lua,rc.lua<span style="color: #2aa198;">}</span> ~/.config/awesome/
+</pre>
+</div>
+
+<p>
+Start awesome.
+</p>
+
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp"><span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">defun</span> <span style="color: #268bd2;">dotspacemacs/user-config</span> <span style="color: #b58900;">()</span>
+  <span style="color: #2aa198;">"Configuration function for user code.</span>
+<span style="color: #2aa198;">This function is called at the very end of Spacemacs initialization after</span>
+<span style="color: #2aa198;">layers configuration. You are free to put any user code."</span>
+  <span style="color: #b58900;">(</span>setq-default js2-strict-trailing-comma-warning nil<span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>setq js2-highlight-external-variables nil<span style="color: #b58900;">)</span>
+  <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">We want company-mode enabled globally</span>
+  <span style="color: #b58900;">(</span>global-company-mode<span style="color: #b58900;">)</span>
+  <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">Always truncate lines</span>
+  <span style="color: #b58900;">(</span>setq-default truncate-lines t<span style="color: #b58900;">)</span>
+  <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">Disable smartparens</span>
+  <span style="color: #b58900;">(</span>turn-off-show-smartparens-mode<span style="color: #b58900;">)</span>
+  <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">Set powerline separators</span>
+  <span style="color: #b58900;">(</span>setq powerline-default-separator 'arrow<span style="color: #b58900;">)</span>
+
+  <span style="color: #b58900;">(</span>setq-default company-idle-delay <span style="color: #6c71c4;">0.0</span><span style="color: #b58900;">)</span>
+  <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">js setup</span>
+  <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">Set indents to two spaces, override some defaults.</span>
+  <span style="color: #b58900;">(</span>setq-default js2-basic-offset <span style="color: #6c71c4;">2</span><span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>setq-default css-indent-offset <span style="color: #6c71c4;">2</span><span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>setq-default web-mode-markup-indent-offset <span style="color: #6c71c4;">2</span><span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>setq tab-width <span style="color: #6c71c4;">2</span><span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>setq-default flycheck-jshintrc <span style="color: #2aa198;">"~/.jshintrc"</span><span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>setq-default flycheck-jscsrc <span style="color: #2aa198;">"~/.jscsrc"</span><span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>setq-default flycheck-eslintrc <span style="color: #2aa198;">"~/.eslintrc"</span><span style="color: #b58900;">)</span>
+
+  <span style="color: #b58900;">(</span>add-hook 'web-mode-hook 'pelm/web-mode-hook<span style="color: #b58900;">)</span>
+
+  <span style="color: #b58900;">(</span>setq tab-width <span style="color: #6c71c4;">2</span><span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>setq js-indent-level <span style="color: #6c71c4;">2</span><span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>setq js2-basic-offset <span style="color: #6c71c4;">2</span><span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>setq js-switch-indent-offset <span style="color: #6c71c4;">2</span><span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>setq js2-indent-switch-body <span style="color: #6c71c4;">2</span><span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>setq c-basic-offset <span style="color: #6c71c4;">2</span><span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>setq vc-follow-symlinks t<span style="color: #b58900;">)</span>
+
+  <span style="color: #b58900;">(</span>evil-leader/set-key <span style="color: #268bd2;">(</span>kbd <span style="color: #2aa198;">"omc"</span><span style="color: #268bd2;">)</span> 'u/add-current-file-name<span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>evil-leader/set-key <span style="color: #268bd2;">(</span>kbd <span style="color: #2aa198;">"omr"</span><span style="color: #268bd2;">)</span> 'recentf-open-files<span style="color: #b58900;">)</span>
+  <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">Search related</span>
+  <span style="color: #b58900;">(</span>evil-leader/set-key <span style="color: #268bd2;">(</span>kbd <span style="color: #2aa198;">"omd"</span><span style="color: #268bd2;">)</span> 'u/search-spacemacs-docs<span style="color: #b58900;">)</span>
+  <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">Evalute JavaScript</span>
+  <span style="color: #b58900;">(</span>evil-leader/set-key <span style="color: #268bd2;">(</span>kbd <span style="color: #2aa198;">"oe"</span><span style="color: #268bd2;">)</span> 'u/node-eval<span style="color: #b58900;">)</span>
+  <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">Buffer related (should be under o directly)</span>
+  <span style="color: #b58900;">(</span>evil-leader/set-key <span style="color: #268bd2;">(</span>kbd <span style="color: #2aa198;">"ol"</span><span style="color: #268bd2;">)</span> 'avy-goto-line<span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>evil-leader/set-key <span style="color: #268bd2;">(</span>kbd <span style="color: #2aa198;">"oc"</span><span style="color: #268bd2;">)</span> 'avy-copy-line<span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>evil-leader/set-key <span style="color: #268bd2;">(</span>kbd <span style="color: #2aa198;">"or"</span><span style="color: #268bd2;">)</span> 'avy-copy-region<span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>evil-leader/set-key <span style="color: #268bd2;">(</span>kbd <span style="color: #2aa198;">"oh"</span><span style="color: #268bd2;">)</span> 'avy-goto-char-in-line<span style="color: #b58900;">)</span>
+  <span style="color: #b58900;">(</span>evil-leader/set-key <span style="color: #268bd2;">(</span>kbd <span style="color: #2aa198;">"on"</span><span style="color: #268bd2;">)</span> 'spacemacs/new-empty-buffer<span style="color: #b58900;">)</span>
+
+
+    <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">web-mode</span>
+    <span style="color: #b58900;">(</span>setq-default
+     css-indent-offset <span style="color: #6c71c4;">2</span>
+     web-mode-markup-indent-offset <span style="color: #6c71c4;">2</span>
+     web-mode-css-indent-offset <span style="color: #6c71c4;">2</span>
+     web-mode-code-indent-offset <span style="color: #6c71c4;">2</span>
+     web-mode-attr-indent-offset <span style="color: #6c71c4;">2</span><span style="color: #b58900;">)</span>
+
+    <span style="color: #b58900;">(</span><span style="color: #859900; font-weight: bold;">with-eval-after-load</span> 'web-mode
+      <span style="color: #268bd2;">(</span>add-to-list 'web-mode-indentation-params '<span style="color: #6c71c4;">(</span><span style="color: #2aa198;">"lineup-args"</span> . nil<span style="color: #6c71c4;">)</span><span style="color: #268bd2;">)</span>
+      <span style="color: #268bd2;">(</span>add-to-list 'web-mode-indentation-params '<span style="color: #6c71c4;">(</span><span style="color: #2aa198;">"lineup-concats"</span> . nil<span style="color: #6c71c4;">)</span><span style="color: #268bd2;">)</span>
+      <span style="color: #268bd2;">(</span>add-to-list 'web-mode-indentation-params '<span style="color: #6c71c4;">(</span><span style="color: #2aa198;">"lineup-calls"</span> . nil<span style="color: #6c71c4;">)</span><span style="color: #268bd2;">)</span><span style="color: #b58900;">)</span>
+
+
+    <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">clojure fancify symbols</span>
+    <span style="color: #b58900;">(</span>setq clojure-enable-fancify-symbols t<span style="color: #b58900;">)</span>
+
+    <span style="color: #b58900;">(</span>setq js2-include-node-externs t<span style="color: #b58900;">)</span>
+    <span style="color: #b58900;">(</span>setq js2-include-browser-externs t<span style="color: #b58900;">)</span>
+    <span style="color: #b58900;">(</span>setq js2-include-global-externs t<span style="color: #b58900;">)</span>
+
+
+    <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">react configurations</span>
+    <span style="color: #b58900;">(</span>setq-default
+     <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">js2-mode</span>
+     js2-basic-offset <span style="color: #6c71c4;">2</span>
+     <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">web-mode</span>
+     css-indent-offset <span style="color: #6c71c4;">2</span>
+     web-mode-markup-indent-offset <span style="color: #6c71c4;">2</span>
+     web-mode-css-indent-offset <span style="color: #6c71c4;">2</span>
+     web-mode-code-indent-offset <span style="color: #6c71c4;">2</span>
+     web-mode-attr-indent-offset <span style="color: #6c71c4;">2</span><span style="color: #b58900;">)</span>
+
+    <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">key-chord to exit insert mode</span>
+    <span style="color: #b58900;">(</span><span style="color: #859900; font-weight: bold;">require</span> '<span style="color: #268bd2; font-weight: bold;">key-chord</span><span style="color: #b58900;">)</span>
+    <span style="color: #b58900;">(</span>key-chord-mode <span style="color: #6c71c4;">1</span><span style="color: #b58900;">)</span>
+    <span style="color: #b58900;">(</span>key-chord-define evil-insert-state-map  <span style="color: #2aa198;">"jk"</span> 'evil-normal-state<span style="color: #b58900;">)</span>
+
+    <span style="color: #b58900;">(</span>setq-default line-spacing <span style="color: #6c71c4;">10</span><span style="color: #b58900;">)</span>
+    <span style="color: #b58900;">(</span>setq org-bullets-bullet-list '<span style="color: #268bd2;">(</span><span style="color: #2aa198;">"&#9632;"</span> <span style="color: #2aa198;">"&#9670;"</span> <span style="color: #2aa198;">"&#9650;"</span> <span style="color: #2aa198;">"&#9654;"</span><span style="color: #268bd2;">)</span><span style="color: #b58900;">)</span>
+    <span style="color: #b58900;">(</span>setq ledger-post-amount-alignment-column <span style="color: #6c71c4;">68</span><span style="color: #b58900;">)</span>
+    <span style="color: #b58900;">(</span>setq org-clock-persist-file <span style="color: #2aa198;">"~/.emacs.d/.cache/org-clock-save.el"</span><span style="color: #b58900;">)</span>
+
+
+
+    <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">temp disabled the eslint for react</span>
+
+    <span style="color: #b58900;">(</span>add-hook 'react-mode-hook #'pelm/disable-eslint<span style="color: #b58900;">)</span>
+    <span style="color: #2aa198;">)</span>
+
+
+<span style="color: #2aa198;">(</span><span style="color: #859900; font-weight: bold;">defun</span> <span style="color: #268bd2;">pelm/disable-eslint</span><span style="color: #b58900;">()</span>
+  <span style="color: #b58900;">(</span>push 'javascript-eslint flycheck-disabled-checkers<span style="color: #b58900;">)</span><span style="color: #2aa198;">)</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline4" class="outline-2">
+<h2 id="orgheadline4">Configuration</h2>
+<div class="outline-text-2" id="text-orgheadline4">
+<p>
+You can use your own functions with crappy by defining or requiring them <code>rc.lua</code> before starting crappy, or using anonymous functions.
+</p>
+</div>
+<div id="outline-container-orgheadline5" class="outline-3">
+<h3 id="orgheadline5">Awesome Config GUI</h3>
+<div class="outline-text-3" id="text-orgheadline5">
+<p>
+Run <code>awesome-config</code> to start the configuration GUI.
+</p>
+</div>
+</div>
+<div id="outline-container-orgheadline6" class="outline-3">
+<h3 id="orgheadline6">Manual Configuration</h3>
+<div class="outline-text-3" id="text-orgheadline6">
+<p>
+Edit <code>.config/awesome/crappy-config.lua</code> as desired.
+</p>
+
+<p>
+A more detailed description of the configuration file is provided in the <code>docs/config</code> directory.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline7" class="outline-2">
+<h2 id="orgheadline7">Plugin API</h2>
+<div class="outline-text-2" id="text-orgheadline7">
+<p>
+See the plugin API documentation in <code>docs/plugins</code>.
+</p>
+</div>
+</div>
+<div id="outline-container-orgheadline8" class="outline-2">
+<h2 id="orgheadline8">Code Used</h2>
+<div class="outline-text-2" id="text-orgheadline8">
+<ul class="org-ul">
+<li>crappy by Andrew Phillips &lt;theasp@gmail.com&gt; <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPLv2</a> includes code from:
+<ul class="org-ul">
+<li>ezconfig.lua by Georgi Valkov &lt;georgi.t.valkov@gmail.com&gt; <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPLv2</a>
+<ul class="org-ul">
+<li><a href="https://raw.githubusercontent.com/gvalkov/dotfiles-awesome/master/ezconfig.lua">https://raw.githubusercontent.com/gvalkov/dotfiles-awesome/master/ezconfig.lua</a></li>
+</ul></li>
+<li>JSON Encode/Decode in Pure LUA by Jeffrey Friedl  <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY 3.0</a>
+<ul class="org-ul">
+<li><a href="http://regex.info/blog/lua/json">http://regex.info/blog/lua/json</a></li>
+</ul></li>
+<li>Serpent by Paul Kulchenko <a href="http://opensource.org/licenses/MIT">MIT</a>
+<ul class="org-ul">
+<li><a href="https://github.com/pkulchenko/serpent">https://github.com/pkulchenko/serpent</a></li>
+</ul></li>
+<li>rc.lua from Awesome by the awesome project <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPLv2</a>
+<ul class="org-ul">
+<li><a href="http://awesome.naquadah.org/">http://awesome.naquadah.org/</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="postamble">&copy; yep8.org. Last updated: 2016-01-23 Sat 20:53 by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.3.3)</p>
+</div>
+</body>
+</html>

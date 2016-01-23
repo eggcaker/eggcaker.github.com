@@ -1,0 +1,77 @@
+/**
+ *  main css of iemacs.org
+ */
+* {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.9;
+  padding:30px 60px;
+}
+body {
+  font-family: 16px/1.6 "Helvetica Neue", Helvetica,Arial,"宋体", sans-serif;
+  max-width:980px;
+  font-size: 1.0em;
+  color: #666;
+  background-color: #fff;
+}
+
+#preamble {
+  text-align: right;
+}
+
+#postamble {
+  margin-top: 100px;
+  font-size: 0.8em;
+  color: #999;
+  height: 100px;
+  width: 100%;
+  overflow:hidden;
+}
+li {
+  margin-left: 1.0em;
+}
+
+pre.src{
+    color:#404040;
+    display:block;
+    font-family:Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+    font-size:15px;
+    line-height:1.4;
+    margin:1px 0px 24px 0px;
+    overflow:auto;
+    padding:18px;
+    white-space:pre;
+    background-color: #f2f0f0;
+    border-radius: 5px;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+}
+a {
+  margin-left: 3px;
+  margin-right: 3px;
+  font-weight: 500;
+  color: #3F51B5;
+}
+a:visited {
+  color: #6A1B9A;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li:before {
+  content: "- ";
+}
+
+td {
+  padding: 10px;
+}
