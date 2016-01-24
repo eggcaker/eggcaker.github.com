@@ -6,8 +6,21 @@ h2 {
 }
 .outline-2{
   margin-left: 1.0em;
+  margin-bottom: 1em;
 }
+.outline-text-2 p {
+  margin-left: 1em;
+  font-size: 0.8em;
+  display: inline;
+}
+
+.timestamp-kwd {
+  display: ;
+}
+
+
 .outline-2 h2:before {
   content: '- ';
 }
+
 span.done, span.todo {display: none;}
