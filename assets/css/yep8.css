@@ -14,14 +14,20 @@ html{
   line-height: 1.9;
   padding:0.5em 0.5em;
 }
-h1 {
+h1,h2,h3,h4 {
   font-weight: 400;
+}
+
+h1{
   font-size: 1.3em;
 }
 
 h2 {
-  font-weight: 400;
   font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1.1em;
 }
 
 
