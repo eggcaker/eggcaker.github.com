@@ -12,12 +12,22 @@ html{
   font-size: 18px;
   font-weight: 300;
   line-height: 1.9;
-  padding:30px 60px;
+  padding:0.5em 0.5em;
 }
+h1 {
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+
 body {
-  font-family: 16px/1.6 "Helvetica Neue", Helvetica,Arial,"宋体", sans-serif;
+  font-family: "Helvetica Neue", Helvetica,Arial,"宋体", sans-serif;
   max-width:980px;
-  font-size: 1.0em;
   color: #666;
   background-color: #fff;
 }
@@ -54,9 +64,31 @@ pre.src{
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;
     box-shadow:         3px 3px 5px 6px #ccc;
 }
+img {
+  margin-left: 1%;
+  max-width: 95%;
+  -moz-box-shadow:
+  inset 0 7em 10em -5em rgba(255,255,255,0.6),
+  0 0.3em 0.5em -0.2em rgba(100,100,100,1),
+  0 1em 2em -0.75em rgba(100,100,100,0.75),
+  0 1em 3em -0.5em rgba(100,100,100,0.5),
+  0 3em 3em -0.25em rgba(100,100,100,0.2);
+  -webkit-box-shadow:
+  inset 0 7em 10em -5em rgba(255,255,255,0.6),
+  0 0.3em 0.5em -0.2em rgba(100,100,100,1),
+  0 1em 2em -0.75em rgba(100,100,100,0.75),
+  0 1em 3em -0.5em rgba(100,100,100,0.5),
+  0 3em 3em -0.25em rgba(100,100,100,0.2);
+  box-shadow:
+    inset 0 7em 10em -5em rgba(255,255,255,0.6),
+    0 0.3em 0.5em -0.2em rgba(100,100,100,1),
+    0 1em 2em -0.75em rgba(100,100,100,0.75),
+    0 1em 3em -0.5em rgba(100,100,100,0.5),
+    0 3em 3em -0.25em rgba(100,100,100,0.2);
+}
 a {
-  margin-left: 3px;
-  font-weight: 500;
+  margin-left: 2px;
+  font-weight: 400;
   color: #3F51B5;
   text-decoration: none;
 }
@@ -97,4 +129,19 @@ blockquote p {
   line-height: 1.8;
   padding:0;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  /* Increase body padding and font-sizes */
+  body {
+    padding: 30px 60px;
+    font-size: 20px;
+    line-height: 1.75;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 30px 60px;
+  }
 }
