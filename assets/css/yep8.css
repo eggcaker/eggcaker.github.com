@@ -109,20 +109,38 @@ td {
   padding: 10px;
 }
 
-blockquote {
+blockquote{
+  font-size: 18px;
+  width: 100%;
+  margin: 0.25em 0;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
   background: #f9f9f9;
   border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
+  margin: 1.5em 0 1.5em 0px;
+  padding: 1.5em 2em;
   quotes: "\201C""\201D""\2018""\2019";
+  border-radius:1px;
 }
 blockquote:before {
-  color: #ccc;
-  content: open-quote;
+  display: block;
+  content: "\201C";
   font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
+  position: absolute;
+  left: 0.1em;
+  top: -0.15em;
+  color: #ccc;
+}
+blockquote:after{
+  position: absolute;
+  right: 0;
+  color: #ccc;
+  content: "\201D";
+  font-size: 4em;
+  margin-right:0.2em;
+  margin-top: -0.5em;
 }
 blockquote p {
   font-size: 1em;
@@ -131,6 +149,18 @@ blockquote p {
   margin: 0;
 }
 
+blockquote cite {
+color: #999999;
+font-size: 1.0em;
+display: block;
+margin-top: 2.5em;
+}
+
+blockquote cite:before {
+content: "\2014 \2009";
+}
+
+
 @media (min-width: 768px) {
   /* Increase body padding and font-sizes */
   body {
@@ -138,6 +168,10 @@ blockquote p {
     font-size: 20px;
     line-height: 1.75;
   }
+blockquote{
+  font-size: 18px;
+  width: 65%;
+}
 }
 
 @media (min-width: 1024px) {
