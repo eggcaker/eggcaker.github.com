@@ -185,3 +185,10 @@ blockquote{
     padding: 30px 60px;
   }
 }
+
+.task-in-progress {
+  font-size: 0.7em;
+  font-weight:200;
+  margin-left: 0.1em;
+  line-height:95%;
+}
