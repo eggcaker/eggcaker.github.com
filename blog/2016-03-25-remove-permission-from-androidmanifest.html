@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 2016-04-03 Sun 12:01 -->
+<meta  charset="utf-8">
+<meta  name="viewport" content="width=device-width, initial-scale=1">
+<title>Remove permission from Androidmanifest.xml</title>
+<meta  name="generator" content="Org-mode">
+<meta  name="description" content="Android ，Development"
+>
+<meta  name="keywords" content="Development">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/yep8.css"/>
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+</head>
+<body>
+<div id="preamble" class="status">
+<p class="preamble"><a href="/">[HOME]</a></p>
+</div>
+<div id="content">
+<h1 class="title">Remove permission from Androidmanifest.xml</h1>
+<p>
+In the android development, you probably has tons of dependencies, sometime if you using a library which add some unwanted
+permissions and you cannot change the upstream coode and don't want to fork it. You can just remove that permission with simple
+configuration in the <code>AndroidManifest.xml</code> file
+</p>
+
+<pre class="example">
+&lt;uses-permission android:name="android.permission.CALL_PHONE" tools:node="remove" /&gt;
+</pre>
+
+<p>
+happy coding...
+</p>
+</div>
+<div id="postamble" class="status">
+<p class="postamble">&copy; yep8.org. Last updated: 2016-04-03 Sun 12:01 by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.3.3)</p>
+</div>
+</body>
+</html>
