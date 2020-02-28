@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://emacs.cc/blog/</loc>
+    <lastmod>2020-02-28T15:38:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emacs.cc/blog_with_emacs_hugo/</loc>
+    <lastmod>2020-02-28T15:38:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emacs.cc/</loc>
+    <lastmod>2020-02-28T15:38:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://emacs.cc/about/</loc>
   </url>
   
@@ -12,10 +27,6 @@
   
   <url>
     <loc>https://emacs.cc/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>https://emacs.cc/</loc>
   </url>
   
 </urlset>
