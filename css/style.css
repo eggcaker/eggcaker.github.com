@@ -33,6 +33,7 @@ article {
 
 article h1 {
   font-size: 2em;
+  line-height:150%;
 }
 
 article h1 a {

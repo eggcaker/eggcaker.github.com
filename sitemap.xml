@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://emacs.cc/pages/books/</loc>
+    <lastmod>2020-02-28T18:25:37+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emacs.cc/pages/about/</loc>
+    <lastmod>2020-02-28T20:03:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emacs.cc/pages/</loc>
+    <lastmod>2020-02-28T20:03:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emacs.cc/</loc>
+    <lastmod>2020-02-28T20:03:54+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://emacs.cc/blog/</loc>
     <lastmod>2020-02-28T15:38:00+08:00</lastmod>
   </url>
@@ -10,15 +30,6 @@
   <url>
     <loc>https://emacs.cc/blog_with_emacs_hugo/</loc>
     <lastmod>2020-02-28T15:38:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://emacs.cc/</loc>
-    <lastmod>2020-02-28T15:38:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://emacs.cc/about/</loc>
   </url>
   
   <url>
