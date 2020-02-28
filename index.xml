@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>大道至簡</title>
+    <link>https://emacs.cc/</link>
+    <description>Recent content on 大道至簡</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://emacs.cc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://emacs.cc/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://emacs.cc/about/</guid>
+      <description>本来以为可以象别人的博客一样，洋洋洒洒几百句的写下自己简介。或风趣诙谐或自嘲自黑， 亦或许一本正经的简历般罗列，但结果展示起来总是好的。但是真的到自己想写的时候发现 想真正的写些东西根本不是自己想像的那样子容易。
+早上五點鍾，早早的醒来已无睡意，开始折腾自己的博客，没得可写，或许现在就是不 需要写吧。
+私は张同柱といいます, 一个伪程序员，自诩熟悉好多语言，其实啥也不精通，哪一门也 没有学明白、吃透。目前裸辞在家，学习日语和照顾孩子.
+ My homepage and blog at emacs.cc @eggcaker on twitter @eggcaker on Github  </description>
+    </item>
+    
+  </channel>
+</rss>
