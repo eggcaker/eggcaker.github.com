@@ -32,7 +32,7 @@ article {
 }
 
 article p {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 article h1 {
@@ -45,7 +45,7 @@ article h1 a {
 }
 
 h1 a:visited, ul.menu li a:visited {
-  color: #2196f3;
+  color: #2196ff3;
 }
 
 /* header and footer areas */
