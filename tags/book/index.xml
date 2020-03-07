@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on 大道至簡</title>
-    <link>https://emacs.cc/pages/</link>
-    <description>Recent content in Pages on 大道至簡</description>
+    <title>book on 大道至簡</title>
+    <link>https://emacs.cc/tags/book/</link>
+    <description>Recent content in book on 大道至簡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 29 Feb 2020 11:09:17 +0800</lastBuildDate>
     
-	<atom:link href="https://emacs.cc/pages/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://emacs.cc/tags/book/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,18 +19,6 @@
       <guid>https://emacs.cc/pages/books/</guid>
       <description>开始读书吧，如果你可以…
 2018[59/59]  一生的忠号 一只 特立独行的猪 一只狗 的生活意见 万物既 伟大又渺小 别跟我 说你懂日本 怎样说 话才打动人 时间旅 行者的妻子 中国古 典诗词合集 夏洛特 的网（双语） 生命中 不能承受之轻 谷歌吴 军：数学之美 每天懂 一点色彩心理学 给一个 未出生孩子的信 “不听话” 的孩子怎样教 南海观音 菩萨出身修行传 女人一思 考，上帝也疯狂 当我谈跑 步时，我谈些什么 在文学馆 听讲座：生命的智慧 父与子的 编程之旅：与小卡特一起学 Python “奔奔族”理财：献给七八十年代生人 不二 教父 气场 史记 宋词 论语 伊丹-咖啡馆旁 婉约词 跳出盒子-领导与自欺的管理寓言 婚姻男女 时间简史 社交天性 黄帝内经 存在与时间 孤独与沉思 王尔德童话 生命是什么 男人一本书 自卑与超越 金融的逻辑 当鞋合脚时 曹操诗选集 王阳明全集 白居易全集 唐诗三百首 万水千山走遍 五天学会绘画 和尚与哲学家 季羡林谈人生 《隋唐演义》 宋词鉴赏辞典 辛弃疾词全集 陶渊明集译注 《伤寒论》讲义 一生孤注掷温柔 和孩子划清界限 拆掉思维里的墙 牛奶可乐经济学 《杨炯诗全集》  2017  封神演义 Android-Training-Course-in-Chinese [英]布莱恩·金 - 瞬间识破谎言的心理学：你别再骗人了 Rx Document “A4 纸”工作法 风声·雨声·读书声 花间集 明清诗词 风萧萧 鬼吹灯 李清照 偶然生活-静闻 幸福了吗 续小五义 一平米健身-斌卡 五线谱入门 沉重的肉身 花间一壶酒 一个都不正经 把时间当作朋友 把时间当朋友 疯狂的程序员 番茄工作法图解 扫起落叶好过冬 济公全传（上） 济公全传（下）  2016[8/8]  Emacs Chats - sachachua 简单的生活艺术 悠然度过一天的 24 小时 不持有的生活 知日*断会离 妙法莲花经 创业维艰 从 0 到 1  2015 [26/26]  法华经 How to Succeed; Or, Stepping-Stones to Fame and Fortune 22 年的幼教感悟：谁拿走了孩子的幸福 30 位国医大师的养生绝招：大国医 The Swift YOU 身体使用手册 2：腰部管理 多活 10 年健康饮水法：这样喝水最健康 狼图腾 菜根谭 四书五经 本草纲目 水浒传 红楼梦 西游记 三国演义 建筑风水学 达芬奇密码 正说宋朝十八帝 正说明朝十六帝 正说清朝三百年 正说清朝十二帝 中国散文鉴赏文库 正说唐朝二十一帝 正说清朝十二后妃 教出完美女孩就这么轻松 藏在手里的养生秘密：手会治病 正说清朝非常人物——慈禧与恭亲王  编程类 [12/12]  Java Puzzlers [2013-07-01 Mon] Learn You a Haskell for Graeat Good [2013-05-20 Mon] Vim handbook [2013-05-20 Mon] sed &amp;amp; awk, 2nd Edition [2012-08-27 Mon] Clojure Programming [2012-08-01 Wed] Programming Clojure [2012-07-21 Sat] The C programming Language [2nd Edition] [2012-07-17 Tue] Learning GNU Emacs [2012-07-10 Tue] Version Control with Git [2012-07-01 Sun] Code Complete Programming in Scala node.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://emacs.cc/pages/about/</link>
-      <pubDate>Fri, 28 Feb 2020 22:44:42 +0800</pubDate>
-      
-      <guid>https://emacs.cc/pages/about/</guid>
-      <description>本来以为可以象别人的博客一样，洋洋洒洒几百句的写下自己简介。或风趣诙谐或自嘲自黑， 亦或许一本正经的简历般罗列，但结果展示起来总是好的。但是真的到自己想写的时候发现 想真正的写些东西根本不是自己想像的那样子容易。
-早上五點鍾，早早的醒来已无睡意，开始折腾自己的博客，没得可写，或许现在就是不 需要写吧。
-私は张同柱といいます, 一个伪程序员，自诩+熟悉+好多语言，其实啥也不精通，哪一门也 没有学明白、吃透。目前裸辞在家，学习日语和照顾孩子.
- My homepage and blog at emacs.cc @eggcaker on twitter @eggcaker on Github  </description>
     </item>
     
   </channel>

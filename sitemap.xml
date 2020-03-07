@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://emacs.cc/pages/books/</loc>
-    <lastmod>2020-02-29T10:18:02+08:00</lastmod>
+    <lastmod>2020-02-29T11:09:17+08:00</lastmod>
   </url>
   
   <url>
@@ -13,18 +13,33 @@
   </url>
   
   <url>
-    <loc>https://emacs.cc/pages/</loc>
-    <lastmod>2020-02-29T10:18:02+08:00</lastmod>
+    <loc>https://emacs.cc/blog/</loc>
+    <lastmod>2020-03-07T22:25:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://emacs.cc/</loc>
-    <lastmod>2020-02-29T10:18:02+08:00</lastmod>
+    <lastmod>2020-03-07T22:25:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://emacs.cc/blog/</loc>
-    <lastmod>2020-02-28T15:38:00+08:00</lastmod>
+    <loc>https://emacs.cc/setup_the_rime_input_method_on_mac_and_emacs/</loc>
+    <lastmod>2020-03-07T22:25:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emacs.cc/tags/book/</loc>
+    <lastmod>2020-02-29T11:09:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emacs.cc/pages/</loc>
+    <lastmod>2020-02-29T11:09:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://emacs.cc/tags/</loc>
+    <lastmod>2020-02-29T11:09:17+08:00</lastmod>
   </url>
   
   <url>
@@ -34,10 +49,6 @@
   
   <url>
     <loc>https://emacs.cc/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://emacs.cc/tags/</loc>
   </url>
   
 </urlset>
