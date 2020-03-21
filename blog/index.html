@@ -9,6 +9,36 @@
     <link rel="canonical" href="https://emacs.cc/">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/favicon.png">
+	<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i &lt; all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
   </head>
 
   <body>
@@ -34,6 +64,44 @@
 
 
 
+
+<article>
+  <h1><a href="/use_latex_to_write_word_card/">用 Latex 做识字卡片</a></h1>
+
+  
+
+
+  <p>最近因为没有什么事，折腾了一下 Latex, 主要的原因也是因为在网上看到了一个人用 Latex
+做了<a href="https://c-tan.com/zh/post/latex-hanzi-gezi/">识字卡片</a>，第一眼看到真心的觉得好漂亮，但是按照作者说的</p>
+<blockquote>
+<p>由于是自用， 因此我希望这套排版是独一无二的， 所以也就不放出源码了。
+其实基本上看到效果就可以猜出用了哪些宏包。</p>
+</blockquote>
+<p>人啊，都是越得不到的越想得到。因为这位朋友不想开源，所以也就想照着图片从零开始撸。
+因为电脑里本身就有 MacTex, 安装就省了，直接开始 style 定制，也许过些日子应该好
+好整理一下写写 Latex 的环境配置。</p>
+<p>其实今天想写个博客记录一下是因为今天早上花了 2 小时解决了个让人抓狂的小 bug, 就是
+<a href="https://ctan.org/pkg/tcolorbox?lang=en">tcolorbox</a> 标题高度问题。这个是有问题的展示</p>
+<figure>
+    <img src="/ox-hugo/tcolorbox_height_bug.png"/> 
+</figure>
+
+<p>可以看到，第一行的中和下的标题拼音不一样高，因为我在定义高度的时候，给了标题一个
+上下的距离，其实后来测试发现，不加这个距离也是一样的，因为标题的高度是根据文字的
+高度来的。这里应为 <code>xia</code> 所有字的高度都没有 <code>zhong</code> 高，导致高度不一致。今天早上
+在 SO 里挨着个的看 tcolorbox 的相关的问题。最后找到了<a href="https://tex.stackexchange.com/questions/435486/enforce-total-height-of-tcolorbox-title">这个</a>。效果：</p>
+<figure>
+    <img src="/ox-hugo/tcolorbox_height_fix.png"/> 
+</figure>
+
+<p>Yoo!</p>
+
+  <p>
+    <i class="date">March 21, 2020</i>
+    /
+    <a href="/use_latex_to_write_word_card/">permalink</a>
+  </p>
+</article>
 
 <article>
   <h1><a href="/setup_the_rime_input_method_on_mac_and_emacs/">折腾一下输入法</a></h1>
