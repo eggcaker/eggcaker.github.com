@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-	<meta name="generator" content="Hugo 0.68.3" />
+	<meta name="generator" content="Hugo 0.76.5" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>大道至簡 | 大道至簡</title>
@@ -126,14 +126,14 @@ MathJax.Hub.Config({
 上没有什么坑就可以使用了。然后按照官方的提示可以用<a href="https://github.com/rime/plum">plum</a>，基本上就按照默认安装就
 可以用了。其实就是多了一些默认的配置文件，然后在配置文件里把
 <code>default_custom.yaml</code> 改成自己需要的就可以了。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#66d9ef">patch</span>:
-  <span style="color:#66d9ef">menu</span>:
-    <span style="color:#66d9ef">page_size</span>: <span style="color:#ae81ff">8</span>
-  <span style="color:#66d9ef">schema_list</span>:
-  - <span style="color:#66d9ef">schema</span>: luna_pinyin_simp     <span style="color:#75715e"># 朙月拼音 简化字</span>
-  - <span style="color:#66d9ef">schema</span>: luna_pinyin_fluency   <span style="color:#75715e"># 语句流</span>
-  - <span style="color:#66d9ef">schema</span>: double_pinyin_flypy   <span style="color:#75715e"># 小鶴雙拼</span>
-  - <span style="color:#66d9ef">schema</span>: wubi_pinyin          <span style="color:#75715e"># 五笔拼音混合輸入</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#f92672">patch</span>:
+  <span style="color:#f92672">menu</span>:
+    <span style="color:#f92672">page_size</span>: <span style="color:#ae81ff">8</span>
+  <span style="color:#f92672">schema_list</span>:
+  - <span style="color:#f92672">schema</span>: <span style="color:#ae81ff">luna_pinyin_simp    </span> <span style="color:#75715e"># 朙月拼音 简化字</span>
+  - <span style="color:#f92672">schema</span>: <span style="color:#ae81ff">luna_pinyin_fluency  </span> <span style="color:#75715e"># 语句流</span>
+  - <span style="color:#f92672">schema</span>: <span style="color:#ae81ff">double_pinyin_flypy  </span> <span style="color:#75715e"># 小鶴雙拼</span>
+  - <span style="color:#f92672">schema</span>: <span style="color:#ae81ff">wubi_pinyin         </span> <span style="color:#75715e"># 五笔拼音混合輸入</span>
 </code></pre></div><p>这里的配置是相当于顺序开启配置是相当于顺序开启了 4 种输入法方案，默认是简体中文输入法。</p>
 <h2 id="emacs-配置">Emacs 配置</h2>
 <p>Emacs 的配置相对来说就要复杂一些了，需要安装的东西有：</p>

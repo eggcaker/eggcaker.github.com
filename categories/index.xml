@@ -5,10 +5,6 @@
     <link>https://emacs.cc/categories/</link>
     <description>Recent content in Categories on 大道至簡</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://emacs.cc/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://emacs.cc/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
