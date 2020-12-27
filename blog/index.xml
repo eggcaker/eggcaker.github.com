@@ -6,7 +6,20 @@
     <description>Recent content in Blogs on 大道至簡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Mar 2020 10:08:00 +0800</lastBuildDate><atom:link href="https://emacs.cc/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Nov 2020 23:21:00 +0800</lastBuildDate><atom:link href="https://emacs.cc/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ここ/そこ/あそこは名です</title>
+      <link>https://emacs.cc/kuku_soku_asoku_desu/</link>
+      <pubDate>Sun, 29 Nov 2020 23:21:00 +0800</pubDate>
+      
+      <guid>https://emacs.cc/kuku_soku_asoku_desu/</guid>
+      <description>  ここ/そこ/あそこは名です 指示场所时，用“ここ”“そこ”“あそこ”。所表示的位置关系与“これ”“それ”“あれ”相同。
+ ここ は　デパートです。（这里是百货商店。） そこ は　図書館です。（那里是图书馆。） あそこ は　入り口です。（那儿是入口。）    名 は 名　[场所]です 表示“名词”存在于“名词”【场所】。
+ 食堂 は デパートの７階 です。（食堂在百货商店的７层。） トイレ は ここです。（厕所在这儿。） 小野さん は 事務所 です。（小野女士在事务所。）    注意: &amp;ldquo;小野さんは事務所です&amp;rdquo; 的汉语译文是 &amp;ldquo;小野女士在事务所。”不能译为“小野女士是事务 所。” 日语的“は”比汉语的“是”更为广泛的含义。在这里表示小野女士在什么地方。 “トイレは　ここです”意思是“厕所在这儿。”是将“トイレ”作为话题来阐述。 而不是将“ここ”作为话题来阐述，意思是“这里是厕所。”
+ 名 は どこですか  用于询问存在的场所。
+ トイレは　どこですか。（厕所在哪儿？） ――あちら　です。（在那儿。） あなたの　かばん　は　どこですか?（你的包在哪儿？） ――私の かばん　は　ここです。（我的包在这儿。）  </description>
+    </item>
+    
     <item>
       <title>用 Latex 做识字卡片</title>
       <link>https://emacs.cc/use_latex_to_write_word_card/</link>
@@ -42,8 +55,8 @@ Emacs 配置 Emacs 的配置相对来说就要复杂一些了，需要安装的�
       <pubDate>Fri, 28 Feb 2020 15:38:00 +0800</pubDate>
       
       <guid>https://emacs.cc/blog_with_emacs_hugo/</guid>
-      <description>因为有了二胎，裸辞在家照顾家人所有了有大把的时间可以折腾一些东西，除了开始学习日 语重新的又把自己的了博客整理了下。之前一直是在各种工具、各种平台之间跳来跳去，其 实根本没有真正安静下来写一些东西。这次借着把Emacs的配置文件转到doom-emacs的机会 看到了在doom-emacs里默认是支持的hugo，那就hugo吧。
-这两天在整理配置的时候看到了一篇文章是如何想静静,+很巧+的是，这个博客的theme就是作 者写的，里面写到一句话：
+      <description>因为有了二胎，裸辞在家照顾家人所有了有大把的时间可以折腾一些东西，除了开始学习日 语重新的又把自己的了博客整理了下。之前一直是在各种工具、各种平台之间跳来跳去，其 实根本没有真正安静下来写一些东西。这次借着把 Emacs 的配置文件转到doom-emacs的机会 看到了在 doom-emacs 里默认是支持的 hugo，那就 hugo 吧。
+这两天在整理配置的时候看到了一篇文章是如何想静静,+很巧+的是，这个博客的 theme 就是作 者写的，里面写到一句话：
  我已经多次鼓吹“我网故我在”的观点了，只是真正的响应者甚寡。很多人听我忽悠，随手搭 个网站， 但也就撂在那儿不管了。他们没听到我的后一句话：网站是用来积累成就的，而 简历可以是成就的堆砌汇总处。最初可以从堆砌小成就开始，把你写的作业、拍的照片、做 的菜肴统统发上来。勿以事小而不堆。很多小事的价值，要过很多年你才能发现（比如十一 年）。除非你记忆力超群，否则凡是没有写下来的东西你很快就会忘，而你忘记的事情跟没 做也没什么区别。换句话说，你差不多算是在白活。记住“堆砌”。
  其实仔细想想，挺好，其实这么多年下来就是自己太浮躁了，也导致了博客网站折腾来折腾 去，却从来没有什么积累。那就从现在开始好了，就像他说的一样，很多小事的价值要很多 年才能发现。那就等到下一个十年再见吧。</description>
     </item>

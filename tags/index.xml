@@ -6,13 +6,40 @@
     <description>Recent content in Tags on 大道至簡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Feb 2020 11:09:17 +0800</lastBuildDate><atom:link href="https://emacs.cc/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Dec 2020 16:33:35 +0800</lastBuildDate><atom:link href="https://emacs.cc/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>book</title>
       <link>https://emacs.cc/tags/book/</link>
-      <pubDate>Sat, 29 Feb 2020 11:09:17 +0800</pubDate>
+      <pubDate>Sat, 05 Dec 2020 16:33:35 +0800</pubDate>
       
       <guid>https://emacs.cc/tags/book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Japanese</title>
+      <link>https://emacs.cc/tags/japanese/</link>
+      <pubDate>Sun, 29 Nov 2020 23:21:00 +0800</pubDate>
+      
+      <guid>https://emacs.cc/tags/japanese/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://emacs.cc/tags/blog/</link>
+      <pubDate>Fri, 28 Feb 2020 15:38:00 +0800</pubDate>
+      
+      <guid>https://emacs.cc/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emacs</title>
+      <link>https://emacs.cc/tags/emacs/</link>
+      <pubDate>Fri, 28 Feb 2020 15:38:00 +0800</pubDate>
+      
+      <guid>https://emacs.cc/tags/emacs/</guid>
       <description></description>
     </item>
     

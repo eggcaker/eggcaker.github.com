@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Japanese on 大道至簡</title>
+    <link>https://emacs.cc/tags/japanese/</link>
+    <description>Recent content in Japanese on 大道至簡</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Nov 2020 23:21:00 +0800</lastBuildDate><atom:link href="https://emacs.cc/tags/japanese/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ここ/そこ/あそこは名です</title>
+      <link>https://emacs.cc/kuku_soku_asoku_desu/</link>
+      <pubDate>Sun, 29 Nov 2020 23:21:00 +0800</pubDate>
+      
+      <guid>https://emacs.cc/kuku_soku_asoku_desu/</guid>
+      <description>  ここ/そこ/あそこは名です 指示场所时，用“ここ”“そこ”“あそこ”。所表示的位置关系与“これ”“それ”“あれ”相同。
+ ここ は　デパートです。（这里是百货商店。） そこ は　図書館です。（那里是图书馆。） あそこ は　入り口です。（那儿是入口。）    名 は 名　[场所]です 表示“名词”存在于“名词”【场所】。
+ 食堂 は デパートの７階 です。（食堂在百货商店的７层。） トイレ は ここです。（厕所在这儿。） 小野さん は 事務所 です。（小野女士在事务所。）    注意: &amp;ldquo;小野さんは事務所です&amp;rdquo; 的汉语译文是 &amp;ldquo;小野女士在事务所。”不能译为“小野女士是事务 所。” 日语的“は”比汉语的“是”更为广泛的含义。在这里表示小野女士在什么地方。 “トイレは　ここです”意思是“厕所在这儿。”是将“トイレ”作为话题来阐述。 而不是将“ここ”作为话题来阐述，意思是“这里是厕所。”
+ 名 は どこですか  用于询问存在的场所。
+ トイレは　どこですか。（厕所在哪儿？） ――あちら　です。（在那儿。） あなたの　かばん　は　どこですか?（你的包在哪儿？） ――私の かばん　は　ここです。（我的包在这儿。）  </description>
+    </item>
+    
+  </channel>
+</rss>
